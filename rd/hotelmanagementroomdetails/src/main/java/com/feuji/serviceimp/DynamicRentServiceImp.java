@@ -48,7 +48,7 @@ public class DynamicRentServiceImp implements DynamicRentService {
 	String getAllBranchUrl;
 
 	@Override
-	@Scheduled(fixedRate = 50000)
+	@Scheduled(fixedRate = 3000000)
 //	@Scheduled(cron = "1 13 18 * * ?")
 	public void scheduledMethod() {
 		saveDynamicRents();
